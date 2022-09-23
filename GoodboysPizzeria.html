@@ -5,6 +5,85 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmd-sizeKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
+  <title> Goodboy's Pizzeria!</title>
 </head>
 <body>
+  <h1>Goodboy's Pizzeria- The pizzeria for the goodest of boys.<h1>
+  <h2>858 Litter Box Ave. Cattuky, New Kitten 12302</h2>
+  <form id="pizza-form">
+    <div class="row content-row">
+      <div class="col-md-4">
+        <h3>Size<span class="text-danger">*</span></h3>
+          <input type="radio" name="size" id="sm-size" value="sm-size" required>
+          <label for="sm-size">Kitten(S)</label><br>
+          <input type="radio" name="size" id="md-size" value="md-size">
+          <label for="md-size">Cat(M)</label><br>
+          <input type="radio" name="size" id="lg-size" value="lg-size">
+          <label for="lg-size">Chonky(L)</label><br>
+          <h3>Cheese<span class="text-danger">*</span></h3>
+          <input type="radio" name="cheese-type" id="mozzerella" value="mozzerella" required>
+          <label for="mozzerella">Mozzerella</label><br>
+          <input type="radio" name="cheese-type" id="cheddar" value="cheddar">
+          <label for="cheddar">Cheddar</label><br>
+          <input type="radio" name="cheese-type" id="provolone" value="provolone">
+          <label for="provolone">Provolone</label><br>
+          <h3>Cheese Amount<span class="text-danger">*</span></h3>
+          <input type="radio" name ="cheese-amt" id="lt-cheese" value="lt-cheese" required>
+          <label for="lt-cheese">Light</label><br>
+          <input type="radio" name ="cheese-amt" id="md-cheese" value="md-cheese">
+          <label for="md-cheese">Medium</label><br>
+          <input type="radio" name="cheese-amt" id="lg-cheese" value="lg-cheese">
+          <label for="lg-cheese">Heavy</label><br>
+          <h3>Toppings</h3>
+          <input type="checkbox" name="topping" id="chicken" value="chicken">
+          <label for="chicken">Chicken</label><br>
+          <input type="checkbox" name="topping" id="tuna" value="tuna">
+          <label for="tuna">Tuna</label><br>
+          <input type="checkbox" name="topping" id="kibble" value="hot-peppers">
+          <label for="Kibble">Kibble</label><br>
+          <input type="checkbox" name="topping" id="anchovies" value="anchovies">
+          <label for="anchovies">Anchovies</label><br>
+          <input type="checkbox" name="topping" id="greenies" value="veg">
+          <label for="greenies">Greenies</label><br>
+          <input type="checkbox" name="topping" id="birds" value="popplers">
+          <label for="birds">Birds</label><br>
+        </div>
+        <div class="col-md-5">
+          <h3>Drinks</h3>
+          <input type="checkbox" name="drink" id="water" value="water">
+          <label for="water">Water</label><br>
+          <input type="checkbox" name="drink" id="milk" value="milk">
+          <label for="milk">Milk</label><br>
+          <input type="checkbox" name="drink" id="uncovered" value="uncovered">
+          <label for="uncovered"> Uncovered Drinks Left Out By Owner (non-Alcoholic)</label><br><br><br>
+        <div class="col-md-3" id="order-div">
+          <label for="notes-input">Notes/Delivery Instructions:</label><br>
+          <textarea name="notes-input" cols="40" rows="5"></textarea><br>
+          <h6 class="text-danger">* = required</h6>
+          <button type="submit" id="submit-button">Submit</button> <button type="reset" id="reset">Reset</button>
+        </div>
+        <div class="col-md-3" id="order-div">
+          <h3>Your order</h3>
+          <div id="order-list"></div>
+          <h5>Subtotal: <span id="subtotal"></span></h5>
+          <h5>Tax: <span id="total-tax"></span></h5>
+          <h5>Total: <span id="total-cost"></span></h5>
+        </div>
+      </div>
+    </form>
+      </div>
+    </div>
+  </form>
+  <h2>About the Founder:</h2>
+    <P>Goodboy is the goodest boy, born approximately 11/27/2009, he created this heartfelt, family driven resteraunt. He loved tuna, chicken, kibble, greenies, anchovies, gravy, and birds. You would never find anything healthy on his dish as that wasnt his style. He was teased growing up for his weird tastes. from that moment he decided when he grew up he would create what is now known as "Goodboys Pizzeria", the acclaimed five star resteraunt, for those with the same tastes as him. </P>
+    <img id="About-image" src="img/AboutMe.jpg" alt="Founder of Goodboy's Pizzeria."><br>
+    <img src="images/logo.png" alt="Founder of Goodboy's Pizzeria, Goodboy Spear"><br>
+  <h3>About the chefs:</h3>
+    <P>Bobby Stray is the head chef at our current location. No relation to Rachel Stray. </P>
+    <img id="Bobby-image" src="img/BobbyStray.jpg" alt="Head chef."><br>
+    <P>Gordon Catsay is our upmost respected chef. He prefers his chicken raw. Don't anger him, or he will be sure to nibble on your food. </P>
+    <img id="Gordon-image" src="img/GordonCatsay.jpg" alt="Chef"><br>
+    <P>Rachel Stray is a valued member of our team. She is a hardworker and knows her way around the kibble. No relation to Bobby Stray. </P>
+    <img id="Rachel-image" src="img/RachelStray.jpg" alt="Chef"><br>
 </body>
+</html>
