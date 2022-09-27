@@ -17,7 +17,6 @@ function Pizza(size, cheeseAmt, toppings, drinks, cheese) {
   this.drinks = drinks;
 }
 
-
 class Toppings extends Pizza {
   pushToPizza(input){
     this.prices.push(input);
