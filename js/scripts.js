@@ -24,27 +24,42 @@ class Toppings extends Pizza {
 }
 
 Pizza.prototype.totalCost = function(){
-  let total = 0;
+  let total = 0.00;
   if (this.size === "Cat-Size"){
-    total += 15;
-  } else {
-    total += 5; 
+    total += 14.00;
+  } else if (this.size === "Kitten-Size"){
+    total += 12.00;
+  } else if (this.size === "Chonky-Size"){
+    total += 18.00
   }
+
+  // }
+  //   total += 5.00; 
+  // }
 
   switch (this.cheeseAmt) {
     case("Light-Cheese"):
       total += 1.50;
       break;
     case("Medium-Cheese"):
-      total += 2;
+      total += 2.00;
       break;
     case("Extra-Cheese"):
-      total += 3;
+      total += 3.00;
       break;
   }
 
   this.toppings.forEach(function(element){
-    total += 2;
+    switch (element) {
+      case("Chicken"):
+      case("Tuna"):
+      case("Kibble"):
+      case("Anchovies"):
+      case("Greenies"):
+      case("Birds"):
+        total += 1.00;
+        break;
+  }
   });
 
 
@@ -53,12 +68,14 @@ Pizza.prototype.totalCost = function(){
       case("Water"):
       case("Milk"):
       case("Uncovered"):
-        total += 2;
+        total += 2.00;
         break;
     }
   });
 
-  total = total * 1.10;
+  subtotal = total * 1;
+  total1 = subtotal * 1.10;
+  total = total * 1.10
   return total;
 }
 
@@ -133,7 +150,7 @@ function listCosts(convertedArray){
       case("Anchovies"):
       case("Greenies"):
       case("Birds"):
-        listArray.push("2.00");
+        listArray.push("1.00");
         break;
       case("Kitten-Size"):
         listArray.push("12.00");
@@ -175,8 +192,10 @@ function displayCost(cost){
   const subDisplay = document.querySelector("span#subtotal");
   const taxDisplay = document.querySelector("span#total-tax");
   const costDisplay = document.querySelector("span#total-cost");
-  let sub = cost * 0.8;
+  let sub = cost * 1;
+  // let subtotal = total * 1;
   let tax = sub * 0.10;
+  // let cost = sub + tax;
   sub = "$" + sub.toFixed(2);
   tax = "$" + tax.toFixed(2);
   cost = "$" + cost.toFixed(2);
