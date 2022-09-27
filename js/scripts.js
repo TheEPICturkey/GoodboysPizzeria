@@ -25,20 +25,20 @@ class Toppings extends Pizza {
 
 Pizza.prototype.totalCost = function(){
   let total = 0;
-  if (this.size === "lg-size"){
+  if (this.size === "Cat-Size"){
     total += 15;
   } else {
     total += 5; 
   }
 
   switch (this.cheeseAmt) {
-    case("lt-cheese"):
+    case("Light-Cheese"):
       total += 1.50;
       break;
-    case("md-cheese"):
+    case("Medium-Cheese"):
       total += 2;
       break;
-    case("x-cheese"):
+    case("Extra-Cheese"):
       total += 3;
       break;
   }
@@ -50,9 +50,9 @@ Pizza.prototype.totalCost = function(){
 
   this.drinks.forEach(function(element){
     switch (element) {
-      case("water"):
-      case("milk"):
-      case("uncovered"):
+      case("Water"):
+      case("Milk"):
+      case("Uncovered"):
         total += 2;
         break;
     }
@@ -118,38 +118,38 @@ function listCosts(convertedArray){
   const listArray = []
   convertedArray.forEach(function(element){
     switch (element) {
-      case("lt-cheese"):
+      case("Light-Cheese"):
         listArray.push("1.50");
         break;
-      case("water"):
-      case("milk"):
-      case("uncovered"):
+      case("Water"):
+      case("Milk"):
+      case("Uncovered"):
         listArray.push("2.50");
         break;
-      case("md-cheese"):
-      case("chicken"):
-      case("tuna"):
-      case("kibble"):
-      case("anchovies"):
-      case("greenies"):
-      case("birds"):
+      case("Medium-Cheese"):
+      case("Chicken"):
+      case("Tuna"):
+      case("Kibble"):
+      case("Anchovies"):
+      case("Greenies"):
+      case("Birds"):
         listArray.push("2.00");
         break;
-      case("sm-size"):
-        listArray.push("8.00");
-        break;
-      case("md-size"):
-        listArray.push("10.00");
-        break;
-      case("lg-size"):
+      case("Kitten-Size"):
         listArray.push("12.00");
         break;
-      case("x-cheese"):
+      case("Cat-Size"):
+        listArray.push("14.00");
+        break;
+      case("Chonky-Size"):
+        listArray.push("18.00");
+        break;
+      case("Extra-Cheese"):
         listArray.push("3.00");
         break;
-      case("mozzerella"):
-      case("provolone"):
-      case("cheddar"):
+      case("Mozzerella-Base"):
+      case("Provolone-Base"):
+      case("Cheddar-Base"):
         listArray.push("0.00");
         break;
       default:
