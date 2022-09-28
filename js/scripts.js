@@ -68,7 +68,7 @@ Pizza.prototype.totalCost = function(){
       case("Water"):
       case("Milk"):
       case("Uncovered"):
-        total += 2.00;
+        total += 2.50;
         break;
     }
   });
@@ -143,7 +143,6 @@ function listCosts(convertedArray){
       case("Uncovered"):
         listArray.push("2.50");
         break;
-      case("Medium-Cheese"):
       case("Chicken"):
       case("Tuna"):
       case("Kibble"):
@@ -163,6 +162,9 @@ function listCosts(convertedArray){
         break;
       case("Extra-Cheese"):
         listArray.push("3.00");
+        break;
+      case("Medium-Cheese"):
+        listArray.push("2.00");
         break;
       case("Mozzerella-Base"):
       case("Provolone-Base"):
@@ -192,10 +194,8 @@ function displayCost(cost){
   const subDisplay = document.querySelector("span#subtotal");
   const taxDisplay = document.querySelector("span#total-tax");
   const costDisplay = document.querySelector("span#total-cost");
-  let sub = cost * 1;
-  // let subtotal = total * 1;
+  let sub = cost / 1.10;
   let tax = sub * 0.10;
-  // let cost = sub + tax;
   sub = "$" + sub.toFixed(2);
   tax = "$" + tax.toFixed(2);
   cost = "$" + cost.toFixed(2);

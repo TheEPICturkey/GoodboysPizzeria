@@ -8,7 +8,7 @@ Pizza{size: "Cat(m)" cheese: "Light", toppings: ["Tuna", "Chicken"]};
 
 Describe Pizza.prototype.totalCost()
 
-Test 1: It should return a number (price) that considers the size of the pizza with tax. Tax is 20%.  
+Test 1: It should return a number (price) that considers the size of the pizza with tax. Tax is 10%.  
 Code:  
   const myPizza = new Pizza("Chonky-Size", "Extra-Cheese", ["Greenies", "Birds"], ["uncovered"]);  
   myPizza.totalCost();  

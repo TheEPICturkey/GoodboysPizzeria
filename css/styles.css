@@ -1,0 +1,44 @@
+body {
+  background-image: url('../img/background4.jpg');
+  background-size: cover;
+}
+
+ol{
+  list-style: none;
+}
+
+.header-row{
+  text-align:center;
+  margin:auto;
+}
+
+.footer-row{
+  text-align:center;
+  margin: 0px;
+  background-color:black;
+  color: white;
+}
+
+#content-container{
+  margin-top: 1em;
+  border:10px double black;
+  padding-bottom: 0.5em;
+  background-color: white;
+}
+
+#wrapper{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin: auto;
+}
+
+.aboutcolumn {
+  width: 20%;
+  text-align: center;
+  box-sizing: border-box;
+  border: solid green(128, 128, 128);
+  border-width: 3px;
+  background-color: rgba(231, 229, 229, 0);
+  float: left;  
+  padding: 5%;
+}
