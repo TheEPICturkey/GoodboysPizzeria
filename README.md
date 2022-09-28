@@ -1,7 +1,7 @@
 # _GoodboysPizzeria_
 
 #### By _**Brandon Spear**_
- :blush: :smiley_cat:
+ :blush: :smiley_cat: :smile_cat:
 
 https://github.com/TheEPICturkey
 https://www.linkedin.com/in/brandon-m-spear/
